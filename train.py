@@ -54,7 +54,7 @@ def main():
     model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=["accuracy"])
 
     # Train model
-    model.fit_generator(
+    model.fit(
         train_gen.generator(),
         epochs=75,
         max_queue_size=10,

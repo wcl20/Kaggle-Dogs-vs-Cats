@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-class OverSampling:
+class CropAveraging:
 
     def __init__(self, height, width, flip=True, interpolation=cv2.INTER_AREA):
         self.height = height
