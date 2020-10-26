@@ -1,5 +1,12 @@
 # Tensorflow-AlexNet
 
+Trained AlexNet model on Kaggle Dogs-vs-Cats dataset.
+
+Training techniques:
+* Random Cropping
+* Data Augmentation
+* Crop Averaging
+
 ## Setup
 Generate Virtual environment
 ```bash
