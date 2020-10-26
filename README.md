@@ -1,4 +1,4 @@
-# Tensorflow-AlexNet
+# Tensorflow AlexNet
 
 Trained AlexNet model on Kaggle Dogs-vs-Cats dataset.
 
