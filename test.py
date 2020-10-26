@@ -29,8 +29,8 @@ def main():
             # Make predictions to the samples and take average
             preds = model.predict(samples)
             predictions.append(preds.mean(axis=0))
-
-    report = classification_report(test_gen.db["labels"], predictions, target_names=["cat", "dog"])
+    predictions = np.array(predictions)
+    report = classification_report(test_gen.db["labels"], predictions.argmax(axis=1), target_names=["cat", "dog"])
     print(report)
 
 

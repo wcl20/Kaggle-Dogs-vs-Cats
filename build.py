@@ -45,7 +45,7 @@ def main():
                 G.append(g)
                 R.append(r)
             dataset.add([image], [label])
-    dataset.close()
+        dataset.close()
 
     print(f"[INFO] Saving means to {config.MEAN_PATH}")
     os.makedirs(config.OUTPUT_PATH, exist_ok=True)
